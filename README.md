@@ -5,3 +5,5 @@
 Collection of Flutter State Best Practices
 
 ## Articles
+
+[Flutter State Management, WidgetView Pattern](https://medium.com/p/flutter-state-management-widgetview-pattern-45a5f97cecab)
