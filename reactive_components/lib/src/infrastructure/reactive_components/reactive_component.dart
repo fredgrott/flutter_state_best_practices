@@ -1,6 +1,9 @@
 // Copyright 2021 Fredrick Allan Grott. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
+//
+// Original was by nato of polyreflection BSD license clause 3
+// copyright 2020
 
 import 'package:flutter/foundation.dart';
 import 'package:meta/meta.dart';
@@ -95,6 +98,7 @@ mixin ReactiveComponent implements ReactiveResource {
   /// A subclass should not call it directly.
   @override
   @protected
+  // ignore: no-empty-block
   Future<void> doDispose() async {}
 
   /// A synchronous callback on adding event data to [dispose].
@@ -103,6 +107,7 @@ mixin ReactiveComponent implements ReactiveResource {
   /// A subclass should not call it directly.
   @override
   @protected
+  // ignore: no-empty-block
   void onDispose() {}
 
   /// Delegates its [dispose] call to [disposerDelegate].
@@ -161,6 +166,7 @@ mixin ReactiveOutputComponent implements ReactiveResource {
   /// A subclass should not call it directly.
   @override
   @protected
+  // ignore: no-empty-block
   Future<void> doDispose() async {}
 
   /// A synchronous callback on adding event data to [dispose].
@@ -169,6 +175,7 @@ mixin ReactiveOutputComponent implements ReactiveResource {
   /// A subclass should not call it directly.
   @override
   @protected
+  // ignore: no-empty-block
   void onDispose() {}
 
   /// Delegates its [dispose] call to [disposerDelegate].

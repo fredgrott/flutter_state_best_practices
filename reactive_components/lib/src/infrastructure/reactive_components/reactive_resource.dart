@@ -1,6 +1,9 @@
 // Copyright 2021 Fredrick Allan Grott. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
+//
+// Original was by nato of polyreflection BSD license clause 3
+// copyright 2020
 
 import 'package:flutter/foundation.dart';
 import 'package:reactive_components/src/infrastructure/reactive_components/resources_disposer.dart';
@@ -52,6 +55,7 @@ mixin ReactiveResource implements _ReactiveResource {
   /// A subclass should not call it directly.
   @override
   @protected
+  // ignore: no-empty-block
   Future<void> doDispose() async {}
 
   /// A synchronous callback on adding event data to [dispose].
@@ -60,6 +64,7 @@ mixin ReactiveResource implements _ReactiveResource {
   /// A subclass should not call it directly.
   @override
   @protected
+  // ignore: no-empty-block
   void onDispose() {}
 
   /// Delegates its [dispose] call to [disposerDelegate].
@@ -87,6 +92,7 @@ abstract class _ReactiveResource {
   Future<void> doDispose();
 
   @protected
+  // ignore: no-empty-block
   void onDispose() {}
 
   @protected

@@ -14,8 +14,8 @@ import 'package:reactive_components/src/infrastructure/reactive_components/react
 /// [ReactiveComponent] acts as a delegate to disposing its [ReactiveResource]s,
 /// so that they should be disposed of together by [ReactiveComponent]'s
 /// dispose method call.
-class Counter with ReactiveComponent {
-  Counter(this._initialCount);
+class CounterBloc with ReactiveComponent {
+  CounterBloc(this._initialCount);
 
   final int _initialCount;
 
