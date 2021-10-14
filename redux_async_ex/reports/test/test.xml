@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite errors="0" failures="0" tests="5" skipped="0" name="D:.fredgrttsstuff.GithubProjects.flutter_state_bestpractices.redux_async_ex.test.widget" timestamp="2021-10-14T18:08:51">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname="D:.fredgrttsstuff.GithubProjects.flutter_state_bestpractices.redux_async_ex.test.widget" name="Counter tests Initial state." time="0.021">
+      <system-out>New StoreTester.</system-out>
+    </testcase>
+    <testcase classname="D:.fredgrttsstuff.GithubProjects.flutter_state_bestpractices.redux_async_ex.test.widget" name="Counter tests Increment counter." time="0.015">
+      <system-out>New StoreTester.
+D:1 R:0 = Action IncrementAction INI
+
+D:1 R:1 = Action IncrementAction END
+
+D:2 R:1 = Action IncrementAction INI
+
+D:2 R:2 = Action IncrementAction END
+</system-out>
+    </testcase>
+    <testcase classname="D:.fredgrttsstuff.GithubProjects.flutter_state_bestpractices.redux_async_ex.test.widget" name="Counter tests Increment counter and download description." time="0.15">
+      <system-out>New StoreTester.
+D:1 R:0 = Action IncrementAndGetDescriptionAction INI
+
+D:2 R:0 = Action BarrierAction INI
+
+D:2 R:1 = Action BarrierAction END
+
+D:3 R:2 = Action IncrementAction INI
+
+D:3 R:3 = Action IncrementAction END
+
+D:4 R:3 = Action BarrierAction INI
+
+D:4 R:4 = Action BarrierAction END
+
+D:4 R:4 = Action IncrementAndGetDescriptionAction END
+</system-out>
+    </testcase>
+    <testcase classname="D:.fredgrttsstuff.GithubProjects.flutter_state_bestpractices.redux_async_ex.test.widget" name="Counter tests Turn on/off the modal barrier." time="0.006">
+      <system-out>New StoreTester.
+D:1 R:0 = Action BarrierAction INI
+
+D:1 R:1 = Action BarrierAction END
+
+D:2 R:1 = Action BarrierAction INI
+
+D:2 R:2 = Action BarrierAction END
+</system-out>
+    </testcase>
+    <testcase classname="D:.fredgrttsstuff.GithubProjects.flutter_state_bestpractices.redux_async_ex.test.widget" name="Counter tests Modal barrier exists while downloading description." time="0.093">
+      <system-out>New StoreTester.
+D:1 R:0 = Action IncrementAndGetDescriptionAction INI
+
+D:2 R:0 = Action BarrierAction INI
+
+D:2 R:1 = Action BarrierAction END
+
+D:3 R:2 = Action IncrementAction INI
+
+D:3 R:3 = Action IncrementAction END
+
+D:4 R:3 = Action BarrierAction INI
+
+D:4 R:4 = Action BarrierAction END
+
+D:4 R:4 = Action IncrementAndGetDescriptionAction END
+</system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

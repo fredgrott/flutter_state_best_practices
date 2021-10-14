@@ -16,6 +16,21 @@ import 'package:redux_async_ex/src/presentation/features/home/viewcontrollers/in
 
 // ignore: long-method
 void main() {
+
+  // setUpAll and tearDownAll for full test suite
+  // then setUp and tearDown per group if needed
+
+  // ignore: no-empty-block
+  setUpAll(() async {
+    // required for all unit testing to ensure the Flutter Engine is fully
+    // initialized before tests are fully run
+    // for http access leave off until we mock it
+    //TestWidgetsFlutterBinding.ensureInitialized();
+  });
+
+  // ignore: no-empty-block
+  tearDownAll(() async {});
+
   group("Counter tests", () {
 
     test('Initial state.', () {

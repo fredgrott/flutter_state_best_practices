@@ -6,7 +6,7 @@ import 'package:async_redux/async_redux.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:redux_async_ex/src/domain/entities/app_state.dart';
-import 'package:redux_async_ex/src/domain/entities/app_store.dart';
+import 'package:redux_async_ex/src/domain/models/app_store.dart';
 import 'package:redux_async_ex/src/presentation/features/home/ui/homepage_connector.dart';
 
 class MyApp extends StatelessWidget {
@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) => StoreProvider<AppState>(
       store: store,
       child: const MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: MyHomePageConnector(),
       ),);
 }
